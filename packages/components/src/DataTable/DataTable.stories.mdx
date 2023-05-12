@@ -35,8 +35,11 @@ import { DataTable } from "@jobber/components/DataTable";
 <Canvas>
   <Story name="DataTable">
     <DataTable
+      onRowClick={row => alert(row.original.id)}
       data={[
         {
+          // The Network ID
+          id: "networkId",
           name: "Jon Snow",
           house: "Stark",
           region: "North",
@@ -44,6 +47,7 @@ import { DataTable } from "@jobber/components/DataTable";
           isAlive: "Yes",
         },
         {
+          id: "networkId2",
           name: "Robert",
           house: "Stark",
           region: "North",
@@ -51,6 +55,7 @@ import { DataTable } from "@jobber/components/DataTable";
           isAlive: "No",
         },
         {
+          id: "networkId3",
           name: "Rickon",
           house: "Stark",
           region: "North",
@@ -58,6 +63,7 @@ import { DataTable } from "@jobber/components/DataTable";
           isAlive: "No",
         },
         {
+          id: "networkId4",
           name: "Robert",
           house: "Baratheon",
           region: "Stormlands",
@@ -65,6 +71,7 @@ import { DataTable } from "@jobber/components/DataTable";
           isAlive: "No",
         },
         {
+          id: "networkId5",
           name: "Cercei",
           house: "Lannister",
           region: "Westerlands",
